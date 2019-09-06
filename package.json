@@ -1,0 +1,40 @@
+{
+  "name": "access-control-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "jsdoc": "jsdoc -c ./docs/config/jsdoc.config.json",
+    "test": "jest --verbose --coverage",
+    "start": "node index.js",
+    "watch": "nodemon index.js",
+    "startDB": "mkdir -p ./data/db && mongod --dbpath ./data/db"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^3.0.6",
+    "cf-supergoose": "^1.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^8.1.0",
+    "eslint": "^6.3.0",
+    "express": "^4.17.1",
+    "express-swagger-generator": "^1.1.15",
+    "jest": "^24.9.0",
+    "jsdoc": "^3.6.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.6.11",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.19.1",
+    "superagent": "^5.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yosh-401-advanced-javascript/401-lab-18.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yosh-401-advanced-javascript/401-lab-18/issues"
+  },
+  "homepage": "https://github.com/yosh-401-advanced-javascript/401-lab-18#readme"
+}
